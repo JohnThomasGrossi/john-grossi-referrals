@@ -13,11 +13,11 @@
    ============================================================ */
 
 var TRACKING = {
-  GA4_ID: "",                 // e.g. "G-XXXXXXXXXX"
-  GOOGLE_ADS_ID: "",          // e.g. "AW-123456789"
-  ADS_LABEL_LEAD: "",         // conversion label for form submissions
-  ADS_LABEL_CALL: "",         // conversion label for phone clicks
-  META_PIXEL_ID: ""           // e.g. "1234567890123456"
+  GA4_ID: "G-0S6YQWLJ9L",
+  GOOGLE_ADS_ID: "AW-18313604510",
+  ADS_LABEL_LEAD: "",         // conversion label for form submissions — still needed
+  ADS_LABEL_CALL: "",         // conversion label for phone clicks — still needed
+  META_PIXEL_ID: "1022289850665568"
 };
 
 (function () {
