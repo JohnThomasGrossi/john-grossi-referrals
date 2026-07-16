@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agent Partners | John Grossi Referrals</title>
+<meta name="description" content="Apply to join the John Grossi Referrals partner network. NJ licensed agents in Ocean & Monmouth County shore markets.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .contact-form { max-width: 680px; }
+  #partner-form {
+    background: var(--white); border: 1px solid var(--border); border-radius: 14px;
+    padding: 10px 28px 26px; box-shadow: var(--shadow-md);
+  }
+  .contact-form label { display:block; font-weight:600; margin: 16px 0 6px; color: var(--navy); }
+  .contact-form input, .contact-form select, .contact-form textarea {
+    width: 100%; padding: 11px 12px; border: 1px solid var(--border); border-radius: 4px; font-size: 0.95rem; font-family: inherit;
+  }
+  .contact-form textarea { min-height: 90px; resize: vertical; }
+  .contact-form .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .contact-form fieldset {
+    border: 1px solid var(--border); border-radius: 8px; background: var(--white);
+    padding: 6px 20px 18px; margin-top: 30px;
+  }
+  .contact-form legend { font-weight: 700; color: var(--navy); font-size: 1.05rem; padding: 0 8px; }
+  label .req-mark { color: #c0392b; }
+  .form-status { display: none; padding: 14px 18px; border-radius: 6px; margin-top: 18px; font-size: 0.92rem; }
+  .form-status.success { display: block; background: #e6f4ea; border: 1px solid #b6dfc1; color: #1e5e34; }
+  .form-status.error { display: block; background: #fbe9e7; border: 1px solid #f3c2ba; color: #8a2e20; }
+  .knockout-note { display: none; margin-top: 8px; font-size: 0.85rem; line-height: 1.5; color: #8a2e20; background: #fbe9e7; border: 1px solid #f3c2ba; padding: 9px 13px; border-radius: 6px; }
+  .field-hint { color: var(--muted); font-size: 0.82rem; font-weight: 400; margin: 4px 0 0; }
+  .agree-row { display: flex; align-items: flex-start; gap: 10px; margin-top: 16px; font-size: 0.9rem; line-height: 1.55; color: var(--text); }
+  .agree-row input[type="checkbox"] { width: auto; margin-top: 4px; flex-shrink: 0; accent-color: var(--gold); }
+  @media (max-width: 640px) { .contact-form .row2 { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">John Grossi <span>NJ Real Estate Referrals</span></div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="buyers.html">Buyers</a></li>
+        <li><a href="sellers.html">Sellers</a></li>
+        <li><a href="market.html">Market Info</a></li>
+        <li class="nav-dropdown">
+          <a href="mortgage-calculator.html">Tools <span class="dropdown-caret">&#9662;</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="affordability-calculator.html">Affordability Calculator</a></li>
+            <li><a href="mortgage-calculator.html">Mortgage Calculator</a></li>
+            <li><a href="closing-cost-calculator.html">Closing Cost Calculator</a></li>
+            <li><a href="seller-net-proceeds.html">Seller Net Proceeds</a></li>
+          </ul>
+        </li>
+        <li><a href="find-an-agent.html">Find an Agent</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="tel:+18482168484" class="phone-cta">(848) 216-8484</a>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Join the referral partner network</h1>
+  <p class="lead">I connect New Jersey buyers and sellers with a small, vetted group of agents across Ocean &amp; Monmouth County. If that's you, tell me a bit about your business below &mdash; it takes about two minutes.</p>
+</section>
+
+<main>
+
+  <section>
+    <span class="step-tag">By application &mdash; invited agents</span>
+    <h2>Partner application</h2>
+    <p style="max-width: 680px; color: var(--muted);">A few quick questions so I can see whether we're a fit and route referrals to the right person. Everything here stays between us. Fields marked <span class="req-mark" style="font-weight:700;">*</span> are required.</p>
+
+    <form class="contact-form" id="partner-form">
+      <input type="hidden" name="access_key" value="f34c1c35-276a-43e6-b34e-b677de2bffe9">
+      <input type="hidden" name="subject" value="New Agent Partner Application — John Grossi Referrals">
+      <input type="hidden" name="from_name" value="John Grossi Referrals Website">
+      <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+      <!-- ============ Agent & brokerage ============ -->
+      <fieldset>
+        <legend>About you</legend>
+
+        <label for="name">Full Name <span class="req-mark">*</span></label>
+        <input type="text" id="name" name="Agent Name" autocomplete="name" required>
+
+        <div class="row2">
+          <div>
+            <label for="phone">Phone <span class="req-mark">*</span></label>
+            <input type="tel" id="phone" name="Phone" autocomplete="tel" required>
+          </div>
+          <div>
+            <label for="email">Email <span class="req-mark">*</span></label>
+            <input type="email" id="email" name="Email" autocomplete="email" required>
+          </div>
+        </div>
+
+        <div class="row2">
+          <div>
+            <label for="brokerage">Brokerage <span class="req-mark">*</span></label>
+            <input type="text" id="brokerage" name="Brokerage" required>
+          </div>
+          <div>
+            <label for="license">NJ License # <span class="req-mark">*</span></label>
+            <input type="text" id="license" name="NJ License Number" required>
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- ============ Qualifying (knockout) ============ -->
+      <fieldset>
+        <legend>Experience &amp; terms</legend>
+
+        <label for="years">Years licensed &amp; actively selling in NJ <span class="req-mark">*</span></label>
+        <select id="years" name="Years Licensed" required>
+          <option value="" disabled selected>-- Select one --</option>
+          <option value="Under 5">Under 5 years</option>
+          <option value="5-9">5&ndash;9 years</option>
+          <option value="10-14">10&ndash;14 years</option>
+          <option value="15-19">15&ndash;19 years</option>
+          <option value="20+">20+ years</option>
+        </select>
+        <div id="years-note" class="knockout-note">My core network targets agents with 10+ years of experience. You're welcome to apply &mdash; I review these individually, so strong candidates just outside that mark are still worth a conversation.</div>
+
+        <label for="fee">Do you accept referrals at a 25% fee, paid at closing? <span class="req-mark">*</span></label>
+        <select id="fee" name="Accepts 25% Referral Fee" required>
+          <option value="" disabled selected>-- Select one --</option>
+          <option value="Yes">Yes</option>
+          <option value="Open to discussing">Open to discussing</option>
+          <option value="No">No</option>
+        </select>
+        <div id="fee-note" class="knockout-note">A 25% referral fee at closing is the standard arrangement for the network. If that's a dealbreaker, we likely aren't a fit &mdash; but feel free to note your terms in the comments below.</div>
+
+        <div class="row2">
+          <div>
+            <label for="txns">Closed transactions, last 12 months <span class="req-mark">*</span></label>
+            <input type="text" id="txns" name="Closed Transactions (12mo)" placeholder="e.g. 18" required>
+          </div>
+          <div>
+            <label for="volume">Approx. sales volume, last 12 months</label>
+            <input type="text" id="volume" name="Sales Volume (12mo)" placeholder="e.g. $6.5M">
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- ============ Coverage & fit ============ -->
+      <fieldset>
+        <legend>Coverage &amp; specialty</legend>
+
+        <label for="areas">Towns / areas you cover <span class="req-mark">*</span></label>
+        <input type="text" id="areas" name="Areas Served" placeholder="e.g. Toms River, Brick, Point Pleasant" required>
+
+        <label for="specialty">Specialty / niche <span class="req-mark">*</span></label>
+        <input type="text" id="specialty" name="Specialty" placeholder="e.g. waterfront, 55+ communities, first-time buyers, investment" required>
+
+        <label for="crm">What CRM or follow-up system do you use?</label>
+        <input type="text" id="crm" name="CRM / Follow-up System" placeholder="e.g. Follow Up Boss, kvCORE, spreadsheet + reminders">
+      </fieldset>
+
+      <!-- ============ Responsiveness agreement ============ -->
+      <fieldset>
+        <legend>Responsiveness agreement</legend>
+        <p class="field-hint" style="margin-top:10px;">The whole model depends on referred clients being contacted fast and kept warm. These aren't contracts &mdash; just the working expectations for every partner.</p>
+
+        <div class="agree-row">
+          <input type="checkbox" id="agree_response" name="Agrees: Respond within 24hr" value="Yes" required>
+          <label for="agree_response" style="font-weight:400; margin:0;">I'll make first contact with any referred client within <strong>24 hours</strong> (sooner when I can). <span class="req-mark">*</span></label>
+        </div>
+
+        <div class="agree-row">
+          <input type="checkbox" id="agree_updates" name="Agrees: Status updates" value="Yes" required>
+          <label for="agree_updates" style="font-weight:400; margin:0;">I'll keep John posted at the key milestones &mdash; first contact, showings, offer, and closing. <span class="req-mark">*</span></label>
+        </div>
+
+        <div class="agree-row">
+          <input type="checkbox" id="agree_care" name="Agrees: Client care standard" value="Yes" required>
+          <label for="agree_care" style="font-weight:400; margin:0;">I'll treat referred clients as my own and represent the referral relationship professionally. <span class="req-mark">*</span></label>
+        </div>
+      </fieldset>
+
+      <label for="comments">Anything else I should know?</label>
+      <textarea id="comments" name="Comments" placeholder="Awards, designations, team structure, alternate fee terms, or anything that helps me place your referrals well."></textarea>
+
+      <div class="consent-row">
+        <input type="checkbox" id="consent" name="Consent" value="Agreed to be contacted" required>
+        <label for="consent" style="font-weight:400; margin:0;">
+          I agree to be contacted by John Grossi Referrals about this application.
+          See our <a href="privacy.html">Privacy Policy</a>. <span class="req-mark">*</span>
+        </label>
+      </div>
+
+      <p style="margin-top:22px;"><button type="submit" id="partner-submit" class="btn btn-primary" style="border:none; cursor:pointer;">Submit Application</button></p>
+      <div id="partner-status" class="form-status"></div>
+    </form>
+
+    <p style="color: var(--muted); font-size: 0.88rem; max-width: 680px; margin-top: 22px;">
+      Questions before applying? Reach me directly at
+      <a href="mailto:John.T.Grossi@gmail.com">John.T.Grossi@gmail.com</a>, or call
+      <a href="tel:+18482168484">(848) 216-8484</a>.
+    </p>
+
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <strong style="color:#fff;">John Grossi Referrals</strong>
+      <p class="footer-note">A New Jersey licensed real estate referral service. Not a brokerage. Not a substitute for legal, financial, or tax advice.</p>
+    </div>
+    <div>
+      <p>Call: <a href="tel:+18482168484"><strong>(848) 216-8484</strong></a></p>
+      <p>Email: <a href="mailto:John.T.Grossi@gmail.com">John.T.Grossi@gmail.com</a></p>
+      <p><a href="privacy.html">Privacy Policy</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+
+    // Soft knockout hints — informative, not blocking (John reviews edge cases individually)
+    var years = document.getElementById('years');
+    var yearsNote = document.getElementById('years-note');
+    years.addEventListener('change', function () {
+      yearsNote.style.display = (years.value === 'Under 5' || years.value === '5-9') ? 'block' : 'none';
+    });
+
+    var fee = document.getElementById('fee');
+    var feeNote = document.getElementById('fee-note');
+    fee.addEventListener('change', function () {
+      feeNote.style.display = (fee.value === 'No') ? 'block' : 'none';
+    });
+
+    var form = document.getElementById('partner-form');
+    var submitBtn = document.getElementById('partner-submit');
+    var statusBox = document.getElementById('partner-status');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var payload = Object.fromEntries(new FormData(form));
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending...';
+      statusBox.className = 'form-status';
+
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(payload)
+      })
+      .then(function (r) { return r.json(); })
+      .then(function (result) {
+        if (result.success) {
+          if (window.trackLead) window.trackLead('agent_application');
+          statusBox.textContent = "Thanks — your application is in. I'll review it and follow up personally, usually within a couple of business days.";
+          statusBox.className = 'form-status success';
+          form.querySelectorAll('input, select, textarea, button').forEach(function (el) { el.disabled = true; });
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else { showError(); }
+      })
+      .catch(showError)
+      .finally(function () {
+        if (statusBox.className.indexOf('success') === -1) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Submit Application';
+        }
+      });
+
+      function showError() {
+        statusBox.textContent = 'Something went wrong sending your application. Please try again, or email John.T.Grossi@gmail.com.';
+        statusBox.className = 'form-status error';
+      }
+    });
+
+  });
+</script>
+
+<script src="analytics.js"></script>
+</body>
+</html>
